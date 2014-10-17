@@ -94,4 +94,6 @@ gulp.task('clean', function () {
   return gulp.src(['.tmp', 'dist'], { read: false }).pipe($.rimraf());
 });
 
+
 gulp.task('build', ['html', 'partials', 'images', 'fonts']);
+

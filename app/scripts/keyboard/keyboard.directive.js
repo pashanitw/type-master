@@ -1,5 +1,12 @@
-var module = angular.module('typeMaster.keyboard');
-module.directive('tmKeyboard', ['$templateCache', function ($templateCache) {
+var module = angular.module('typeMaster.keyboard')
+
+.factory('keyBoardService',[function(){
+
+}])
+    .controller('keyboardController',function(){
+
+    })
+.directive('tmKeyboard', ['$templateCache', function ($templateCache) {
 
     return {
         restrict: 'E',
@@ -12,4 +19,5 @@ module.directive('tmKeyboard', ['$templateCache', function ($templateCache) {
         }
     }
 }
+
 ]);
